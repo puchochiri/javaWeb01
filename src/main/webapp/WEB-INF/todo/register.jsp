@@ -13,7 +13,7 @@
 </head>
 <body>
 <form action="/todo/register" method="post">
-    <button></button>
+    <button type="submit">등록처리</button>
 </form>
 </body>
 </html>

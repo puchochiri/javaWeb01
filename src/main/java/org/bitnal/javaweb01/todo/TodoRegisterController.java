@@ -13,16 +13,16 @@ public class TodoRegisterController extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException{
         System.out.println("입력 화면을 볼수있도록 구성");
 
-        
+        RequestDispatcher dispatchar = req.getRequestDispatcher("/WEB-INF/todo/register.jsp");
+
+        dispatchar.forward(req,resp);
 
     }
     
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         System.out.print("입력을 처리하고 목록 페이지로 이동");
 
-        RequestDispatcher dispatcher = req.getRequestDispatcher("/WEB-INF/todo/register.jsp");
 
-        dispatcher.forward(req,resp);
     }
     
 

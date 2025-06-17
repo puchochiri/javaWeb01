@@ -22,6 +22,9 @@ public class TodoRegisterController extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         System.out.print("입력을 처리하고 목록 페이지로 이동");
 
+        //브라우저가 호츌해야하는 주소
+        resp.sendRedirect("/todo/list");
+
 
     }
     

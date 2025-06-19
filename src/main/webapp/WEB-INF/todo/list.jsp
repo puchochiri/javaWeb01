@@ -13,5 +13,15 @@
 </head>
 <body>
 <h1>List Page</h1>
+
+${list[0].tno} --- ${list[0].title}
+<h3>${1 + 2 + 3}</h3>
+<h3>${"AAA" += "BBB"}</h3>
+<h3>${"AAA".equals("AAA")}</h3>
+<h4>${list[0].title}</h4>
+<h4>${list[0].getTitle()}</h4>
+
+${list}
+
 </body>
 </html>
